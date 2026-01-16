@@ -1,1 +1,85 @@
 html, body { height: 100%; }
+
+input {
+  width: 284.5px;
+  appearance: none;
+  box-sizing: border-box;
+  font: inherit;
+  color: rgb(0, 0, 0);
+  caret-color: rgb(0, 0, 0);
+  border: 3px solid rgb(0, 0, 0);
+}
+
+select {
+  width: 90px;
+  height: 25.2px;
+  appearance: none;
+  font: inherit;
+  color: rgb(0, 0, 0);
+  caret-color: rgb(0, 0, 0);
+  border: 3px solid rgb(0, 0, 0);
+}
+
+p {
+  padding: 5px;
+  text-align: center;
+  border-radius: 4px;
+  color: rgb(255, 255, 255);
+  background: rgb(0, 25, 58);
+}
+
+a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+a:active {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+#body {
+  margin: 0 auto;
+  text-align: start;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(0, 0, 0);
+  background: rgb(0, 14, 32);
+  font: normal 100%/1.5 monospace;
+}
+
+#container {
+  background: rgba(0, 0, 0, 0.288);
+  backdrop-filter: blur(10px);
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  width: 80%;
+  max-width: 285px;
+  text-align: center;
+  color: #ffffff;
+  position: relative;
+  overflow: hidden;
+}
+
+#container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  animation: shine 4s;
+}
+
+#output {
+  margin-top: 10px;
+  min-height: 58px;
+  padding: 14px; border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+@keyframes shine { 0% { left: -100%; } 50% { left: 100%; } 100% { left: 100%; } }
