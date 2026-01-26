@@ -1,0 +1,16 @@
+   LAB ORDER SEARCH
+
+	Simple Javascript Based Web-App for Searching Required Labs for
+	Patients Based on Medical Hx and Provider Preference.
+
+	Developed For:
+		United States Air Force Academy's 10th Medical Group,
+		10th Healthcare Ops Squadron.
+
+	Languages:
+		JavaScript, HTML, CSS.
+
+	Configure Prior to Use.
+
+   Written by AirmanTwelve
+   Apache License Version 2.0
