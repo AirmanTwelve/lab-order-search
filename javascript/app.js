@@ -8,9 +8,11 @@ function performSearch() {
 
     const med_list_unfiltered_input = document.getElementById('medication-list').value.toLowerCase().trim();
 
-    if (!med_list_unfiltered_input) { }
+    if (!med_list_unfiltered_input) { 
+        console.log("Medications: No Input");
+    }
 
-    const med_list_array = med_list_unfiltered_input.replace(/:/g, " ").split(/\s+/);
+    const med_list_array = med_list_unfiltered_input.replace(/[^a-zA-Z0-9]/g, " ").split(/\s+/);
 
     const on_htn_meds = med_list_array.some(word => htn.includes(word.toLowerCase()));
     const on_gout_meds = med_list_array.some(word => gout.includes(word.toLowerCase()));
